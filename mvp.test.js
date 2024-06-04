@@ -30,12 +30,12 @@ beforeEach(() => {
 })
 
 describe('Sprint 5 Module', () => {
-  describe('Task 1 - Class name of widget', () => {
+  describe.('Task 1 - Class name of widget', () => {
     test('👉 [1] All 4 widgets have a "widget" class name', () => {
       expect(document.querySelectorAll('section .widget')).toHaveLength(4)
     })
   })
-  describe('Task 2 - Quote of the Day widget', () => {
+  describe.('Task 2 - Quote of the Day widget', () => {
     describe(`The best thing about a boolean...
       Anonymous in an unknown date`, () => {
       beforeAll(() => {
@@ -67,7 +67,7 @@ describe('Sprint 5 Module', () => {
       })
     })
   })
-  describe('Task 3 - Corporate Speak', () => {
+  describe.('Task 3 - Corporate Speak', () => {
     beforeAll(() => {
       jest.spyOn(global.Math, 'random').mockReturnValue(0.9)
     })
@@ -79,7 +79,7 @@ describe('Sprint 5 Module', () => {
     })
   })
 
-  describe('Task 4 - Countdown widget', () => {
+  describe ('Task 4 - Countdown widget', () => {
     test('👉 [7] Counts from "T-minus 5..." to "Liftoff! 🚀"', () => {
       screen.getByText('Countdown')
       screen.getByText('T-minus 5...')
